@@ -3,8 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import { createTheme, makeStyles, ThemeProvider } from "@material-ui/core";
-import { pink, red } from "@material-ui/core/colors";
+import { createTheme, ThemeProvider } from "@material-ui/core";
 
 const theme = createTheme({
   palette: {

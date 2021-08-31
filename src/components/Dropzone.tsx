@@ -3,19 +3,6 @@ import { Dispatch, SetStateAction, useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import styled from "styled-components";
 
-const getColor = (props: any) => {
-  if (props.isDragAccept) {
-    return "#00e676";
-  }
-  if (props.isDragReject) {
-    return "#ff1744";
-  }
-  if (props.isDragActive) {
-    return "#2196f3";
-  }
-  return "#eeeeee";
-};
-
 const Container = styled.div`
   width: 100%;
   flex: 1;

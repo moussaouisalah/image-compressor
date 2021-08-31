@@ -1,12 +1,5 @@
-import {
-  Box,
-  Button,
-  makeStyles,
-  Slider,
-  TextField,
-  Typography,
-} from "@material-ui/core";
-import { Container, Grid } from "@material-ui/core";
+import { Button, Slider, Typography } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import { useState } from "react";
 import Dropzone from "./components/Dropzone";
 import { compressAccurately } from "image-conversion";
