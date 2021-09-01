@@ -18,6 +18,7 @@ const Container = styled.div`
   color: #d8810e;
   outline: none;
   transition: border 0.24s ease-in-out;
+  hover: cursor;
 `;
 
 type DropzoneProps = {

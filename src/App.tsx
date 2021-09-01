@@ -1,4 +1,4 @@
-import { Button, Slider, Typography } from "@material-ui/core";
+import { Button, Container, Slider, Typography } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import { useState } from "react";
 import Dropzone from "./components/Dropzone";
@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <Container className="App">
       <Grid
         container
         alignItems="center"
@@ -44,7 +44,7 @@ function App() {
           </Typography>
         </Grid>
         {isEditing ? (
-          <Grid item>
+          <Grid item style={{ width: "100%" }} lg={6} md={8} xs={12}>
             <Grid container direction="column" alignItems="center" spacing={2}>
               <Grid item>
                 <Typography
@@ -106,9 +106,16 @@ function App() {
             </Grid>
           </Grid>
         ) : (
-          <Grid item>
+          <Grid item xs={12}>
             <Grid container direction="column" alignItems="center" spacing={2}>
-              <Grid item xs={12}>
+              <Grid
+                item
+                lg={6}
+                md={8}
+                sm={10}
+                xs={12}
+                style={{ width: "100%" }}
+              >
                 <Dropzone file={file} setFile={setFile} />
               </Grid>
               <Grid item xs={12}>
@@ -125,7 +132,7 @@ function App() {
           </Grid>
         )}
       </Grid>
-    </div>
+    </Container>
   );
 }
 
