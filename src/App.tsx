@@ -36,10 +36,10 @@ function App() {
         container
         alignItems="center"
         justifyContent="center"
-        style={{ height: "100vh" }}
+        style={{ height: "100%" }}
       >
-        <Grid item style={{ position: "absolute", top: "20px" }}>
-          <Typography align="center" variant="h3">
+        <Grid item style={{ position: "absolute", top: "40px" }}>
+          <Typography align="center" variant="h3" color="primary">
             Image Compression
           </Typography>
         </Grid>
